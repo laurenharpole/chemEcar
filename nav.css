@@ -1,0 +1,109 @@
+
+@keyframes bugfix {
+  from {
+    padding: 0;
+  }
+  to {
+    padding: 0;
+  }
+}
+@-webkit-keyframes bugfix {
+  from {
+    padding: 0;
+  }
+  to {
+    padding: 0;
+  }
+}
+#overlay-button {
+  position: absolute;
+  right: 2em;
+  top: 3em;
+  padding: 26px 11px;
+  z-index: 5;
+  cursor: pointer;
+  user-select: none;
+}
+#overlay-button span {
+  height: 4px;
+  width: 35px;
+  border-radius: 2px;
+  background-color: #999898;
+  position: relative;
+  display: block;
+}
+#overlay-button span:before {
+  top: -10px;
+  visibility: visible;
+}
+#overlay-button span:after {
+  top: 10px;
+  background-color: #333332;
+  transition: 2.4s;
+}
+#overlay-button span:before, #overlay-button span:after {
+  height: 4px;
+  width: 35px;
+  border-radius: 2px;
+  background-color: #999898;
+  position: absolute;
+  content: "";
+  transition: .5s ease-in;
+}
+#overlay-button:hover span, #overlay-button:hover span:before, #overlay-button:hover span:after {
+  background: #333332;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked ~ #overlay {
+  opacity: 1;
+transition: visibility 0s linear 0s, opacity 700ms;
+visibility: visible;
+}
+
+input[type=checkbox]:checked ~ #overlay-button:hover span, input[type=checkbox]:checked ~ #overlay-button span {
+  background: transparent;
+}
+input[type=checkbox]:checked ~ #overlay-button span:before {
+  transform: rotate(45deg) translate(7px, 7px);
+  opacity: 1;
+}
+input[type=checkbox]:checked ~ #overlay-button span:after {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+#overlay {
+  height: 100vh;
+  width: 100vw;
+  background: white;
+  z-index: 2;
+  opacity:0;
+  visibility: hidden;
+  position: fixed;
+}
+
+#overlay ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100vh;
+  padding-left: 0;
+  list-style-type: none;
+}
+#overlay ul li {
+  padding: 1em;
+}
+#overlay ul li a {
+  color: #ec6451;
+text-decoration: none;
+font-size: 80px;
+font-family: 'Raleway', sans-serif;
+}
+#overlay ul li a:hover {
+  color: #c10101;
+}

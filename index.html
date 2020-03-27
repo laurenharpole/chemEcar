@@ -2,12 +2,14 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Particles background using Particles.js</title>
+  <title>ChemE Car</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./nav.css">
 
 </head>
 <body>
+  
   <!-- partial:index.partial.html -->
   <div id="particles-js"></div>
   <section class="particles-">
@@ -19,48 +21,60 @@
         <li><a href="index.html">HOME</a></li>
         <li><a href="team.html">TEAM</a></li>
         <li><a href="recruitment.html">RECRUITMENT</a></li>
-        <li><a href="#">SPONSORS</a></li>
+        <li><a href="sponsors.html">SPONSORS</a></li>
       </ul>
     </div>
-  </div>
+
 <!--top cheme car logo --->
-  <div class="navimg">
-    <a href="index.html"><img alt="cheat" width="90px" src="stickerss.png"></a>
+  <div class="navimg" id="home">
+    <a href="index.html"><img alt="cheat" class="navi" src="stickerss.png"></a>
   </div>
 
 
 
   <div class="text">
-    <h1 class="titles">CORNELL CHEME CAR</h1>
+    <h1 class="titles">Cornell ChemE Car</h1>
     <h3 class="titlesunder">Engineering | Problem Solving | Team Collaboration</h3>
     <p class="titlesblurb">Cornell University ChemE Car is a project team in which students of all majors work together to build several model cars purely powered and stopped by chemical reactions. After months of design, construction and careful calibrations, we compete each spring at the AlChE Northeast Regional Conference.</p>
   </div>
 
 
-  <div class='contacts'>
-    <!---this is to create space for contact things in mobile--->
+  <!---- footer stuff --->
+  <div class='info-wrap'>
+    <div class='row-info'>
+      <div class='column-info'>
+        <div class='one-column-info'>
+            <p class="bottom-info">
+              CONTACT <br><br>
+              <a href="chemecar@cornell.edu">chemecar@cornell.edu</a><br><br>
+                social  media
+            </p>
+        </div>
+      </div>
+
+      <div class='column-info'>
+        <div class='one-column-info'>
+          <p class="bottom-info">
+            LOCATION <br><br>
+            132 Olin Hall<br>
+            Ithaca, NY 14853
+          </p>
+        </div>
+      </div>
+
+      <div class='column-info'>
+        <div class='three-column-info'>
+          <p class="bottom-info">
+          Cornell University ChemE Car is a student-run project team of approximately fifty members with the goal to build model cars entirely operated by chemical reactions.
+          </p>
+          <p class="bottom-info">Copyright © Cornell University ChemE Car 2020</p>
+        </div>
+      </div>
+    </div>
   </div>
-  <p class="bottom-contact">
-    CONTACT <br><br>
-    <a href="chemecar@cornell.edu">chemecar@cornell.edu</a>
-  </p>
-
-  <p class="bottom-social">
-    social  media
-  </p>
-
-  <p class="bottom-location">
-    LOCATION <br><br>
-    132 Olin Hall<br>
-    Ithaca, NY 14853
-  </p>
   <!-- partial -->
   <script src='https://cldup.com/S6Ptkwu_qA.js'></script><script  src="./script.js"></script>
-
+</section>
 </body>
-<footer>
-  <p class="bottom-copy" position=center>
-    Copyright © Cornell University ChemE Car 2019
-  </p>
-</footor>
+
 </html>
